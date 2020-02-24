@@ -8,15 +8,15 @@ trap 'printf "\n";stop' 2
 banner() {
 
 
-printf "\e[1;92m                         \e[0m\e[1;77m                                 \e[0m\n"
+printf "\e[1;92m                         \e[0m\e[1;77m      hack cam yous ebay                           \e[0m\n"
 printf "\e[1;92m                         \e[0m\e[1;77m/                                \e[0m\n"
 printf "\e[1;92m  █▲   ▲█   ▲████▼   \e[0m\e[1;77m|                                \e[0m\n"
 printf "\e[1;92m  █ ▲ ▲ █   █          \e[0m\e[1;77m                                 \e[0m\n"
-printf "\e[1;92m  █  ▲   █   █░░░▼     \e[0m\e[1;77m\                                 \e[0m\n"
-printf "\e[1;92m  █       █        █     \e[0m \n" 
+printf "\e[1;92m  █  ▲  █    █░░░▼▼     \e[0m\e[1;77m\     KCC                            \e[0m\n"
+printf "\e[1;92m  █      █          █     \e[0m \n" 
 printf "\e[1;92m              ░▒▒▒▒▲    \e[0m \n"             
 
-printf " \e[1;77m moded by tharaka hasintha [____MS___]\e[0m \n"
+printf " \e[1;77m created by tharaka hasintha [____MS___]\e[0m \n"
 
 printf "\n"
 
